@@ -26,9 +26,9 @@ namespace Projet_prog_sys_PPC.Business.Mapper
                 Id = value.Id,
                 Name = value.Name,
                 Description = value.Description,
+                People = value.People != null ? MapperPeople.Map(value.People) : null,
                 Time = value.Time,
-                People = value.People != null ? MapperPeople.Map(value.People) : null
-                
+
             };
         }
         public static List<Actions> Map(List<Data.DAO.Actions> value)
