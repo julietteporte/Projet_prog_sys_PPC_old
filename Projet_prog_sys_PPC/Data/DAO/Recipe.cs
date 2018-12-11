@@ -9,5 +9,6 @@ namespace Projet_prog_sys_PPC.Data.DAO
         public int Id { get; set; }
         public string Name { get; set; }
         public int PrepTime { get; set; }
+        public float Price { get; set; }
     }
 }
