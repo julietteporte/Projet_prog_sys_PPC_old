@@ -59,21 +59,26 @@ namespace Projet_prog_sys_PPC.Model
     class Customer : People
     {
         public IPresenceStrategy Strategy { get; set; }
+        this.Strategy = strategy;
         public bool IsReserved;
         public int NbrSatisfiedCustomer;
         public Table Table;
         private IList<string> order;
         private int presenceTime;
+        
+        Recipe recipe = new Recipe();
 
         public Customer(IPresenceStrategy strategy)
         {
-            this.Strategy = strategy;
+            
         }
 
 
         public void Pay()
         {
             NbrSatisfiedCustomer++;
+            var price = recipe.Price;
+            HotelMaster.Instance.Wallet = HotelMaster.Instance.Wallet + price;
         }
 
         public void OrderMenu()

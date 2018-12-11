@@ -7,16 +7,25 @@ namespace Projet_prog_sys_PPC.Model
 {
     class Cook
     {
+
+        Recipe recipe = new Recipe();
+        public int Id;
+        public bool haveToCook;
+        public bool IsAvailable;
+
         public Cook()
         {
+            
         }
-
-        public int Id;
-
-
+        
         public void Cooking()
         {
-            // TODO implement here
+            if ( haveToCook == true && IsAvailable == true )
+            {
+                var timeCook = recipe.TimePrepare;
+                var name = recipe.NameRecipe;
+                Console.WriteLine("Plat finit : " + name + ", Temps : " + timeCook);
+            } else Console.WriteLine("Cuisinier occupé tmtc");
         }
     }
 }

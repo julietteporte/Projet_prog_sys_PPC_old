@@ -12,9 +12,8 @@ namespace Projet_prog_sys_PPC.Model
         }
 
         public int Id;
-
         public string NameRecipe;
-
         public int TimePrepare;
+        public int Price;
     }
 }

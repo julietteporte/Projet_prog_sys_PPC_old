@@ -17,7 +17,7 @@ namespace Projet_prog_sys_PPC.Model
         public bool IsAvailable;
         public List<Order> Order;
         public bool IsCleaned;
-        public int nbrOccupiedTable;
+        public bool IsDressed;
 
     }
 }

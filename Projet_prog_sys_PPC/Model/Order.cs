@@ -9,14 +9,12 @@ namespace Projet_prog_sys_PPC.Model
     {
         public Order()
         {
+
         }
 
         public int Id;
-
         public Table Table;
-
         public Customer Customer;
-
         int nbrOrderFinal;
     }
 }

@@ -8,17 +8,21 @@ namespace Projet_prog_sys_PPC.Model
 {
     class HotelMaster : People
     {
-        private HotelMaster()
-        {
-        }
-
-        private static HotelMaster _instance = null;
         private int _nbrWelcomedCustomer = 0;
+
+        public int Wallet = 0;
         //Préparation des stratégies
         Customer _objectCustomer = new Customer(new NormalStrategy());
         Customer _objectCustomer2 = new Customer(new SlowStrategy());
-        Table objectTable = new Table();
+        Table _objectTable = new Table();
 
+        private HotelMaster()
+        {
+
+        }
+
+        private static HotelMaster _instance = null;
+        
         public static HotelMaster Instance
         {
             get
@@ -40,7 +44,7 @@ namespace Projet_prog_sys_PPC.Model
 
         public void AssignTable(Customer customer)
         {
-            if (objectTable.IsAvailable == true)
+            if (_objectTable.IsAvailable == true)
             {
                 _objectCustomer.Table = new Table();
             }
