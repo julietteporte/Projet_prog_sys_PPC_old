@@ -41,7 +41,8 @@ namespace Projet_prog_sys_PPC.Service
         }*/
         public List<Business.Compose> Select()
         {
-            return (from p in context.Compose.Include(i => i.Scenario) select MapperCompose.Map(p)).ToList();
+            return (from p in context.Compose.Include(i => i.Scenario).Include(i => i.Actions)
+                    select MapperCompose.Map(p)).ToList();
 
         }
     }

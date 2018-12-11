@@ -6,7 +6,7 @@ namespace Projet_prog_sys_PPC.Business
 {
     public class Compose
     {
-        public int Id { get; set; }
+        public Actions Actions { get; set; }
         public Scenario Scenario { get; set; }
     }
 }

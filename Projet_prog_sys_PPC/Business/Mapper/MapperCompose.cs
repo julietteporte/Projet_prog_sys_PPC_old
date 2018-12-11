@@ -11,17 +11,16 @@ namespace Projet_prog_sys_PPC.Business.Mapper
         {
             return new Data.DAO.Compose
             {
-                Id = value.Id
+                Scenario = value.Scenario != null ? MapperScenario.Map(value.Scenario) : null,
+                Actions = value.Actions != null ? MapperActions.Map(value.Actions) : null
             };
         }
-
-
         public static Compose Map(Data.DAO.Compose value)
         {
             return new Compose
             {
-                Id = value.Id,
-                Scenario = value.Scenario != null ? MapperScenario.Map(value.Scenario) : null
+                Scenario = value.Scenario != null ? MapperScenario.Map(value.Scenario) : null,
+                Actions = value.Actions != null ? MapperActions.Map(value.Actions) : null
             };
         }
         public static List<Compose> Map(List<Data.DAO.Compose> value)
