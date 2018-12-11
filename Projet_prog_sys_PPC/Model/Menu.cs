@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    public Menu()
+    public class Menu
     {
-    }
 
-    public list<Recipe> ListRecipe;
+    }
+    
 }

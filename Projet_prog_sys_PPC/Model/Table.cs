@@ -5,23 +5,19 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    public class Table
+    class Table
     {
 
         public Table()
         {
         }
 
-        public void Id;
-
+        public int Id;
         public int Capacity;
-
         public bool IsAvailable;
-
-        public list<Order> Order;
-
+        public List<Order> Order;
         public bool IsCleaned;
-
         public int nbrOccupiedTable;
+
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class People
+    abstract class People
     {
         public People()
         {

@@ -8,46 +8,50 @@ namespace Projet_prog_sys_PPC.Model
 {
     class HotelMaster : People
     {
-        public HotelMaster()
+        private HotelMaster()
         {
         }
 
-        private static HotelMaster uniqueInstance;
+        private static HotelMaster _instance = null;
+        private int _nbrWelcomedCustomer = 0;
+        //Préparation des stratégies
+        Customer _objectCustomer = new Customer(new NormalStrategy());
+        Customer _objectCustomer2 = new Customer(new SlowStrategy());
+        Table objectTable = new Table();
 
-        public int nbrWelcomedCustomer;
-
-        private void Singleton()
+        public static HotelMaster Instance
         {
-            // TODO implement here
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new HotelMaster();
+                }
+                return _instance;
+            }
         }
 
-        /// <summary>
-        /// @return
-        /// </summary>
-        public static HotelMaster getInstance()
+        public void Welcome(Customer customer)
         {
-            // TODO implement here
-            return null;
+            _nbrWelcomedCustomer++;
+            VerifyReservation(customer);
+            AssignTable(customer);
         }
 
-        public void Call()
+        public void AssignTable(Customer customer)
         {
-            // TODO implement here
+            if (objectTable.IsAvailable == true)
+            {
+                _objectCustomer.Table = new Table();
+            }
         }
 
-        public void Welcome()
+        public void VerifyReservation(Customer customer)
         {
-            // TODO implement here
-        }
-
-        public void AssignTable()
-        {
-            // TODO implement here
-        }
-
-        public void VerifyReservation()
-        {
-            // TODO implement here
+            if (_objectCustomer.IsReserved == true)
+            {   
+            }
+            else AssignTable(customer);
         }
     }
 }

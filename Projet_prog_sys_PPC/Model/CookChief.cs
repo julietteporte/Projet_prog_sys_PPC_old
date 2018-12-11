@@ -13,7 +13,7 @@ namespace Projet_prog_sys_PPC.Model
 
         private static CookChief uniqueInstance;
 
-        public list<Order> Orders;
+        public List<Order> Orders;
 
         public int nbrDoneRecipe;
 

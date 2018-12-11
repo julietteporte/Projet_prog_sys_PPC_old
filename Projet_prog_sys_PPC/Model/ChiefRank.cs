@@ -9,6 +9,7 @@ namespace Projet_prog_sys_PPC.Model
     {
         public ChiefRank()
         {
+
         }
 
         public int nbrOrder;
