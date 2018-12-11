@@ -14,7 +14,8 @@ namespace Projet_prog_sys_PPC.Business.Mapper
                 Id = value.Id,
                 Name = value.Name,
                 PrepTime = value.PrepTime,
-                Price = value.Price
+                Price = value.Price,
+                Type = value.Type
             };
         }
 
@@ -25,7 +26,8 @@ namespace Projet_prog_sys_PPC.Business.Mapper
                 Id = value.Id,
                 Name = value.Name,
                 PrepTime = value.PrepTime,
-                Price = value.Price
+                Price = value.Price,
+                Type = value.Type
             };
         }
         public static List<Recipe> Map(List<Data.DAO.Recipe> value)

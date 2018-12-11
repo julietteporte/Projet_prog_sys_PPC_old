@@ -10,5 +10,6 @@ namespace Projet_prog_sys_PPC.Data.DAO
         public string Name { get; set; }
         public int PrepTime { get; set; }
         public float Price { get; set; }
+        public string Type { get; set; }
     }
 }
