@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Projet_prog_sys_PPC.Data.DAO
+namespace Projet_prog_sys_PPC.Business
 {
-    public class Job
+    public class People
     {
         public int Id { get; set; }
         public string Type { get; set; }

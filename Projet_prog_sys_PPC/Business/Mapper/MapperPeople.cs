@@ -5,28 +5,28 @@ using System.Linq;
 
 namespace Projet_prog_sys_PPC.Business.Mapper
 {
-    public static class MapperJob
+    public static class MapperPeople
     {
-        public static Data.DAO.Job Map(Job value)
+        public static Data.DAO.People Map(People value)
         {
-            return new Data.DAO.Job
+            return new Data.DAO.People
             {
-                Id = value.Id,
+                Id = value.Id, 
                 Type = value.Type,
                 Number = value.Number
             };
         }
 
-        public static Job Map(Data.DAO.Job value)
+        public static People Map(Data.DAO.People value)
         {
-            return new Job
+            return new People
             {
                 Id = value.Id,
                 Type = value.Type,
                 Number = value.Number
             };
         }
-        public static List<Job> Map(List<Data.DAO.Job> value)
+        public static List<People> Map(List<Data.DAO.People> value)
         {
             return (from v in value select Map(v)).ToList();
         }

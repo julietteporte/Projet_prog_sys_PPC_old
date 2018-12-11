@@ -21,7 +21,7 @@ namespace Projet_prog_sys_PPC.Data
         public DbSet<Scenario> Scenario { get; set; }
         public DbSet<Compose> Compose { get; set; }
         public DbSet<Actions> Actions { get; set; }
-        public DbSet<Job> Job { get; set; }
+        public DbSet<People> People { get; set; }
         public DbSet<Recipe> Recipe { get; set; }
       
     }

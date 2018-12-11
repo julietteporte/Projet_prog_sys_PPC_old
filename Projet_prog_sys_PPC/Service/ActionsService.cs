@@ -41,7 +41,7 @@ namespace Projet_prog_sys_PPC.Service
         }
         public List<Business.Actions> Select()
         {
-            return (from p in context.Actions.Include(i => i.Job) select MapperActions.Map(p)).ToList();
+            return (from p in context.Actions.Include(i => i.People) select MapperActions.Map(p)).ToList();
 
         }
     }

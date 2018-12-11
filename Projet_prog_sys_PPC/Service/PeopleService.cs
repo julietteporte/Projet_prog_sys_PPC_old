@@ -7,41 +7,41 @@ using System.Linq;
 
 namespace Projet_prog_sys_PPC.Service
 {
-    public class JobService
+    public class PeopleService
     {
         ProjetContext context;
 
-        public JobService()
+        public PeopleService()
         {
             context = new ProjetContext();
         }
 
-        public void Add(Business.Job business)
+        public void Add(Business.People business)
         {
-            var entity = MapperJob.Map(business);
-            context.Job.Add(entity);
+            var entity = MapperPeople.Map(business);
+            context.People.Add(entity);
             context.SaveChanges();
         }
         public void Delete(int id)
         {
-            var entity = (from c in context.Job where c.Id == id select c).FirstOrDefault();
+            var entity = (from c in context.People where c.Id == id select c).FirstOrDefault();
             if (entity != null)
             {
-                context.Job.Remove(entity);
+                context.People.Remove(entity);
                 context.SaveChanges();
             }
 
         }
-        public void Update(Business.Job business)
+        public void Update(Business.People business)
         {
-            var entity = (from c in context.Job where c.Id == business.Id select c).FirstOrDefault();
+            var entity = (from c in context.People where c.Id == business.Id select c).FirstOrDefault();
             entity.Type = business.Type;
             context.SaveChanges();
         }
 
-        public List<Business.Job> Select()
+        public List<Business.People> Select()
         {
-            return (from c in context.Job select MapperJob.Map(c)).ToList();
+            return (from c in context.People select MapperPeople.Map(c)).ToList();
 
         }
     }

@@ -13,7 +13,8 @@ namespace Projet_prog_sys_PPC.Business.Mapper
             {
                 Id = value.Id,
                 Name = value.Name,
-                Description = value.Description
+                Description = value.Description,
+                Time = value.Time
             };
         }
 
@@ -25,7 +26,9 @@ namespace Projet_prog_sys_PPC.Business.Mapper
                 Id = value.Id,
                 Name = value.Name,
                 Description = value.Description,
-                Job = value.Job != null ? MapperJob.Map(value.Job) : null
+                Time = value.Time,
+                People = value.People != null ? MapperPeople.Map(value.People) : null
+                
             };
         }
         public static List<Actions> Map(List<Data.DAO.Actions> value)
