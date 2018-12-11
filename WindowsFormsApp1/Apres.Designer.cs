@@ -67,11 +67,12 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(225, 91);
+            this.textBox2.Location = new System.Drawing.Point(205, 91);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 37);
+            this.textBox2.Size = new System.Drawing.Size(219, 37);
             this.textBox2.TabIndex = 17;
-            this.textBox2.Text = "Bilan serveur(s)";
+            this.textBox2.Text = "Commande(s)";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox3
             // 
@@ -88,7 +89,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(175, 37);
             this.textBox4.TabIndex = 19;
-            this.textBox4.Text = "Bilan client(s)";
+            this.textBox4.Text = "Client(s)";
             // 
             // textBox5
             // 
@@ -101,11 +102,11 @@
             // 
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(225, 218);
+            this.textBox6.Location = new System.Drawing.Point(218, 218);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(175, 37);
+            this.textBox6.Size = new System.Drawing.Size(182, 37);
             this.textBox6.TabIndex = 21;
-            this.textBox6.Text = "Bilan temps";
+            this.textBox6.Text = "Plats préparés ";
             // 
             // textBox7
             // 
