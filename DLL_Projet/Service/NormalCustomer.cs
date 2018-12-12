@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-namespace Projet_prog_sys_PPC.Model
+namespace DLL_Projet.Service
 {
-    public class FastStrategy : IPresenceStrategy
+    public class NormalStrategy : IPresenceStrategy
     {
         public int GetPresenceTime(int presenceTime)
         {
-            return presenceTime / 2;
+            return presenceTime;
         }
     }
 }
