@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81D548E8-E6DE-4548-B7BD-DA8EBA04A654}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DLL_Projet</RootNamespace>
+    <AssemblyName>DLL_Projet</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\Actions.cs" />
+    <Compile Include="Business\Compose.cs" />
+    <Compile Include="Business\Mapper\MapperActions.cs" />
+    <Compile Include="Business\Mapper\MapperCompose.cs" />
+    <Compile Include="Business\Mapper\MapperPeople.cs" />
+    <Compile Include="Business\Mapper\MapperRecipe.cs" />
+    <Compile Include="Business\Mapper\MapperScenario.cs" />
+    <Compile Include="Business\People.cs" />
+    <Compile Include="Business\Recipe.cs" />
+    <Compile Include="Business\Scenario.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Data\DAO\Actions.cs" />
+    <Compile Include="Data\DAO\Compose.cs" />
+    <Compile Include="Data\DAO\People.cs" />
+    <Compile Include="Data\DAO\Recipe.cs" />
+    <Compile Include="Data\DAO\Scenario.cs" />
+    <Compile Include="Data\ProjetContext.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Projet_prog_sys_PPC\Projet_prog_sys_PPC.csproj">
+      <Project>{d26b0343-0ebe-46cc-87b1-8b1fe01d3de7}</Project>
+      <Name>Projet_prog_sys_PPC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

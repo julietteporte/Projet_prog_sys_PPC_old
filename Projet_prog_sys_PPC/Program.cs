@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Projet_prog_sys_PPC.Service;
+using System;
 
 namespace Projet_prog_sys_PPC
 {
@@ -6,7 +7,6 @@ namespace Projet_prog_sys_PPC
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
         }
     }
 }
