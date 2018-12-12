@@ -15,7 +15,7 @@ namespace Projet_prog_sys_PPC.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Data.DAO.Compose>().HasKey(i => new { i.Id_Scenario, i.Id });
+            modelBuilder.Entity<Data.DAO.Compose>().HasKey(i => new { i.Id_Scenario, i.Id_Actions });
         }
 
         public DbSet<Scenario> Scenario { get; set; }

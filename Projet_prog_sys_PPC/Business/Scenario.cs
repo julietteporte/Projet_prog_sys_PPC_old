@@ -8,6 +8,5 @@ namespace Projet_prog_sys_PPC.Business
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public int ActionOrder { get; set; }
     }
 }

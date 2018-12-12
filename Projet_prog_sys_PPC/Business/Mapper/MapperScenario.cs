@@ -12,8 +12,7 @@ namespace Projet_prog_sys_PPC.Business.Mapper
             return new Data.DAO.Scenario
             {
                 Id = value.Id,
-                Name = value.Name,
-                ActionOrder = value.ActionOrder
+                Name = value.Name
             };
         }
 
@@ -22,8 +21,7 @@ namespace Projet_prog_sys_PPC.Business.Mapper
             return new Scenario
             {
                 Id = value.Id,
-                Name = value.Name,
-                ActionOrder = value.ActionOrder
+                Name = value.Name
             };
         }
         public static List<Scenario> Map(List<Data.DAO.Scenario> value)
