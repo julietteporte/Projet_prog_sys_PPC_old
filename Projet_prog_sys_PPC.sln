@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Projet_prog_sys_PPC", "Projet_prog_sys_PPC\Projet_prog_sys_PPC.csproj", "{D26B0343-0EBE-46CC-87B1-8B1FE01D3DE7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{86A2726B-6C39-4C50-985D-AA9F388453FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IHM", "WindowsFormsApp1\IHM.csproj", "{86A2726B-6C39-4C50-985D-AA9F388453FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
