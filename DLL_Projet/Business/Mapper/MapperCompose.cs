@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Linq;
 
-namespace Projet_prog_sys_PPC.Business.Mapper
+namespace DLL_Projet.Business.Mapper
 {
     public static class MapperCompose
     {

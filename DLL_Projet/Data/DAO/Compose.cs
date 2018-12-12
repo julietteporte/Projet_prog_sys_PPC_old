@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Projet_prog_sys_PPC.Data.DAO
+namespace DLL_Projet.Data.DAO
 {
     public class Compose
     {
