@@ -7,8 +7,6 @@ namespace Projet_prog_sys_PPC
     {
         static void Main(string[] args)
         {
-           var toto = new ScenarioService().Select();
-            Console.ReadLine();
         }
     }
 }
