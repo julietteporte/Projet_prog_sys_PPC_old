@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Before));
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -42,29 +41,18 @@
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Calibri", 20F, System.Drawing.FontStyle.Italic);
-            this.textBox1.Location = new System.Drawing.Point(164, 10);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(376, 33);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Veuillez rentrer les paramètres ";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
-            this.textBox2.Location = new System.Drawing.Point(3, 61);
+            this.textBox2.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox2.Location = new System.Drawing.Point(3, 3);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(154, 28);
+            this.textBox2.Size = new System.Drawing.Size(154, 25);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "Scénario";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -72,11 +60,11 @@
             // textBox3
             // 
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
-            this.textBox3.Location = new System.Drawing.Point(3, 105);
+            this.textBox3.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox3.Location = new System.Drawing.Point(3, 45);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 28);
+            this.textBox3.Size = new System.Drawing.Size(244, 25);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Nombre client(s)";
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
@@ -84,29 +72,29 @@
             // textBox4
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
-            this.textBox4.Location = new System.Drawing.Point(3, 150);
+            this.textBox4.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox4.Location = new System.Drawing.Point(3, 90);
             this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 28);
+            this.textBox4.Size = new System.Drawing.Size(244, 25);
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Nombre serveur(s)";
             // 
             // textBox5
             // 
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
-            this.textBox5.Location = new System.Drawing.Point(3, 232);
+            this.textBox5.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox5.Location = new System.Drawing.Point(3, 172);
             this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(244, 28);
+            this.textBox5.Size = new System.Drawing.Size(244, 25);
             this.textBox5.TabIndex = 4;
             this.textBox5.Text = "Nombre cuisinier(s)";
             this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(263, 105);
+            this.textBox7.Location = new System.Drawing.Point(264, 45);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(183, 20);
@@ -114,7 +102,7 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(263, 150);
+            this.textBox8.Location = new System.Drawing.Point(264, 90);
             this.textBox8.Margin = new System.Windows.Forms.Padding(2);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(183, 20);
@@ -122,7 +110,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(263, 194);
+            this.textBox9.Location = new System.Drawing.Point(264, 134);
             this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(183, 20);
@@ -132,7 +120,7 @@
             // button1
             // 
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(271, 299);
+            this.button1.Location = new System.Drawing.Point(253, 299);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 56);
@@ -147,26 +135,25 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.38462F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.61538F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.domainUpDown1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox7, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.textBox9, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox5, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.textBox10, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.textBox11, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.domainUpDown1, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBox4, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBox7, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox2, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.textBox9, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBox5, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.textBox8, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.textBox10, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.textBox11, 1, 4);
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(30, 62);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 6;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 56.70103F));
+            this.tableLayoutPanel1.RowCount = 5;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 43.29897F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
@@ -174,12 +161,12 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 6F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(521, 277);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(521, 216);
             this.tableLayoutPanel1.TabIndex = 13;
             // 
             // domainUpDown1
             // 
-            this.domainUpDown1.Location = new System.Drawing.Point(264, 62);
+            this.domainUpDown1.Location = new System.Drawing.Point(265, 4);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.Size = new System.Drawing.Size(182, 20);
             this.domainUpDown1.TabIndex = 14;
@@ -189,21 +176,34 @@
             // textBox10
             // 
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox10.Font = new System.Drawing.Font("Calibri", 17F, System.Drawing.FontStyle.Bold);
-            this.textBox10.Location = new System.Drawing.Point(3, 194);
+            this.textBox10.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Bold);
+            this.textBox10.Location = new System.Drawing.Point(3, 134);
             this.textBox10.Margin = new System.Windows.Forms.Padding(2);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(244, 28);
+            this.textBox10.Size = new System.Drawing.Size(244, 25);
             this.textBox10.TabIndex = 9;
             this.textBox10.Text = "Nombre chef(s) de rang";
             // 
             // textBox11
             // 
-            this.textBox11.Location = new System.Drawing.Point(263, 232);
+            this.textBox11.Location = new System.Drawing.Point(264, 172);
             this.textBox11.Margin = new System.Windows.Forms.Padding(2);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(183, 20);
             this.textBox11.TabIndex = 10;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Calibri", 18.5F, System.Drawing.FontStyle.Bold);
+            this.textBox1.Location = new System.Drawing.Point(21, 11);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(540, 31);
+            this.textBox1.TabIndex = 0;
+            this.textBox1.Text = "Veuillez rentrer les paramètres et appuyer sur play ";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Before
             // 
@@ -211,12 +211,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Before";
-            this.Text = "Form1";
+            this.Text = "Before";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
@@ -226,8 +226,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -240,6 +238,7 @@
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
