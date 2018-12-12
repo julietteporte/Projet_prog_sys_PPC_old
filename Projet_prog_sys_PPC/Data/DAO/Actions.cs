@@ -13,6 +13,6 @@ namespace Projet_prog_sys_PPC.Data.DAO
         public int Id_People { get; set; }
         [ForeignKey("Id_People")]
         public virtual People People { get; set; }
-        public float Time { get; set; }
+        public int Time { get; set; }
     }
 }
