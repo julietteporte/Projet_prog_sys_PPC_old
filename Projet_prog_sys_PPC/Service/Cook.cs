@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class Cook
+    public class Cook
     {
 
         Recipe recipe = new Recipe();
         public int Id;
-        public bool haveToCook;
+        public bool HaveToCook;
         public bool IsAvailable;
 
         public Cook()
@@ -18,12 +18,12 @@ namespace Projet_prog_sys_PPC.Model
             
         }
         
-        public void Cooking()
+        public void Cooking(Recipe recipe)
         {
-            if ( haveToCook == true && IsAvailable == true )
+            if ( HaveToCook == true && IsAvailable == true )
             {
                 var timeCook = recipe.TimePrepare;
-                var name = recipe.NameRecipe;
+                var name = recipe.RecipeName;
                 Console.WriteLine("Plat finit : " + name + ", Temps : " + timeCook);
             } else Console.WriteLine("Cuisinier occupé tmtc");
         }

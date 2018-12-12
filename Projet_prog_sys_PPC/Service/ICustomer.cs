@@ -5,9 +5,8 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    public class Menu
+    public interface IPresenceStrategy
     {
-
+        int GetPresenceTime(int PresenceTime);
     }
-    
 }

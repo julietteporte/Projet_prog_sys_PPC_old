@@ -5,22 +5,35 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class CookChief : People
+    public class CookChief : People
     {
+        public List<Order> Orders;
+        public int nbrDoneRecipe;
+
         public CookChief()
         {
         }
 
         private static CookChief uniqueInstance;
-
-        public List<Order> Orders;
-
-        public int nbrDoneRecipe;
-
+        
         private void Singleton()
         {
             // TODO implement here
         }
+
+        /// <summary>
+        /// Implémentation People
+        /// </summary>
+        public override int Id
+        {
+            get { return Id; }
+        }
+
+        public override void Wait()
+        {
+
+        }
+
 
         /// <summary>
         /// @return

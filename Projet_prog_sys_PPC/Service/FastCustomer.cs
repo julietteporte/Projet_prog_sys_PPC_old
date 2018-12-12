@@ -5,15 +5,11 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class Recipe
+    public class FastStrategy : IPresenceStrategy
     {
-        public Recipe()
+        public int GetPresenceTime(int presenceTime)
         {
+            return presenceTime / 2;
         }
-
-        public int Id;
-        public string NameRecipe;
-        public int TimePrepare;
-        public int Price;
     }
 }

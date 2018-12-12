@@ -5,7 +5,9 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class FastCustomer
+    public abstract class People
     {
+        public abstract void Wait();
+        public abstract int Id { get; }
     }
 }

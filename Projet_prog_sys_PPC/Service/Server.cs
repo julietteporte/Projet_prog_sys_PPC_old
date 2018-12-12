@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Projet_prog_sys_PPC.Model
 {
-    class Server
+    public class Server
     {
         public Server()
         {
